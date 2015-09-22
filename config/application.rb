@@ -36,5 +36,6 @@ module DropboxAnalysis
     config.active_record.raise_in_transactional_callbacks = true
     config.force_ssl = true
     config.assets.initialize_on_precompile = true
+    config.serve_static_assets = true
   end
 end
