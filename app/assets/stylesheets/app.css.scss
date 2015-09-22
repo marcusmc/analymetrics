@@ -1,0 +1,48 @@
+.total_view {
+  .legend {
+    display: inline-block;
+    .pie-legend {
+      vertical-align: middle;
+      list-style-type: none;
+      float: left;
+      li {
+        .legend_square {
+          width: 40px;
+          display: inline-block;
+          border: 1px solid black;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+.stage .intro_heading {
+  margin: 0 auto;
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+
+.navigation_options {
+  ul {
+    li {
+      cursor: pointer;
+      border: 1px solid gray;
+      padding: 5px;
+      display: inline-block;
+      &:hover {
+        background: #ccc;
+        color: white;
+      }
+      &.selected {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
+
+table {
+}
+

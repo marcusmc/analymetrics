@@ -13,4 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require_tree .
+//= require handlebars.runtime
+//= require external/underscore
+//= require external/backbone
+//= require external/filesize
+//= require external/Chart
+//= require external/strftime
+//= require_tree ./templates
+//= require_tree ./models
+//= require_tree ./views
+
+
+var AnaMetrics = AnaMetrics || {};
+AnaMetrics.appView = new AppView();
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('analysis').appendChild(AnaMetrics.appView.render().el);
+});

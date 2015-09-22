@@ -1,0 +1,17 @@
+<h3> Largest Files </h3>
+<table class='table table-bordered table-striped'>
+  <thead>
+    <th> File Path </th>
+    <th> Size </th>
+    <th> Type </th>
+  </thead>
+  <tbody>
+  {{#each largest_files}}
+    <tr>
+      <td>{{path}}</td>
+      <td>{{size}}</td>
+      <td>{{type}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

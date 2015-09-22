@@ -1,0 +1,15 @@
+<h3> Space Usage by File Type </h3>
+<table class='table table-bordered table-striped'>
+  <thead>
+    <th> File Type </th>
+    <th> Size </th>
+  </thead>
+  <tbody>
+  {{#each file_types}}
+    <tr>
+      <td>{{type}}</td>
+      <td>{{size}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

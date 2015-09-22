@@ -1,0 +1,7 @@
+:javascript
+  AnaMetrics.user_info = #{@account_info.to_json}
+  AnaMetrics.user = new User(AnaMetrics.user_info);
+#analysis
+  .row
+    .col-md-12
+      %h1 Analymetrics - Space Analyzer for your Dropbox
